@@ -1,10 +1,10 @@
 {
   "name": "DeepSeek Harness",
-  "install": "bash .cursor/install.sh",
+  "install": "bash /agent/repos/deepseek-harness/.cursor/install.sh",
   "terminals": [
     {
       "name": "dsh-web",
-      "command": "export NVM_DIR=\"$HOME/.nvm\"; [ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"; nvm use 22 >/dev/null 2>&1 || true; exec pnpm dsh web --no-open",
+      "command": "cd /agent/repos/deepseek-harness && export NVM_DIR=\"$HOME/.nvm\"; [ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"; nvm use 22 >/dev/null 2>&1 || true; exec pnpm dsh web --no-open",
       "description": "DeepSeek Harness Web UI (http://127.0.0.1:3080). Prints a tokenized URL on boot; restart this terminal to get a fresh token. Requires DEEPSEEK_API_KEY for model responses."
     }
   ],
