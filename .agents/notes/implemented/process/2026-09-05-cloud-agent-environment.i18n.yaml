@@ -1,0 +1,6 @@
+# Bilingual-pair consistency record (docs/i18n/README.md): the git blob hash of each
+# side as of the last confirmed-consistent state. Both languages carry equal authority;
+# after editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/process/2026-09-05-cloud-agent-environment.md
+2026-09-05-cloud-agent-environment.md: 83db6991215c7b76fbbd5e43bdf3230e945fa13e
+2026-09-05-cloud-agent-environment.zh.md: 7f695afe1d09671ca34fcc22378908b89b1311cc
